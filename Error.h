@@ -11,3 +11,20 @@
 								 ERROR_ENTRY_NODEF( id + 8 ), ERROR_ENTRY_NODEF( id + 90 )
 #define ERROR_MAX_ENTRY 1000
 
+namespace Error
+{
+	struct ERROR
+	{
+		int id;
+		char message[ERROR_MAXSIZE_MESSAGE];
+		struct IN
+		{
+			short line;
+			short col;
+		} inext;
+	};
+
+	ERROR geterror( int id );
+	ERROR geterrorint( int id, int line, int col );
+};
+
