@@ -1,7 +1,7 @@
 #pragma once
 #include "Error.h"
 
-#define PARM_IN L"-in:"
+#define PARM_IN L"-in:" 
 #define PARM_OUT L"-out:"
 #define PARM_LOG L"-log:"
 #define PARM_MAX_SIZE 300
